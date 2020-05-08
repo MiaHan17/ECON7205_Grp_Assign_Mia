@@ -1,0 +1,74 @@
+
+\section{Model}
+\label{sec:model}
+
+First, we would like to test the relationship between immigrants‘ assimilation and employment status.
+Assimilation is measured by the number of years since the immigrant's first arrival in Australia ($\mathit{Year\ since\ Migration}$).
+Employment status is captured by a dummy variable which set to one if the respondent is employed and zero otherwise ($\mathit{Employment}$).
+Probit model with robust standard errors is selected to control for heteroskedasticity.
+More importantly, we select several control variables to assure that immigrants' assimilation is not associated with omitted variables and personal characteristics such as education level ($\mathit{Education}$), age ($\mathit{Age}$), English level ($\mathit{English}$), gender ($\mathit{Sex}$), qualification ($\mathit{Qualification}$), and health status ($\mathit{Health}$).
+In addition, we add both quadratic form of $\mathit{Year\ since\ Migration}$ and quadratic form of $\mathit{Age}$) in our model as we predict that the relationships between employment and assimilation or age are U-shaped.
+In sum, the Probit regression is expressed in equation \eqref{eq:1}.
+
+\begin{equation}
+  \label{eq:1}
+  \begin{aligned}
+  \mathrm{Pr}[\mathit{Employment}_i=1|\pmb{X}_i]
+  = \Phi \Bigl[
+    &\beta_0
+    + \beta_1 \mathit{Immigrant}_i
+    + \beta_2 \mathit{Year\ since\ Migration}_i \\
+    & + \beta_3 \mathit{Year\ since\ Migration}_i^2
+    + \beta_4 \mathit{Education}_i
+    + \beta_5 \mathit{Age}_i \\
+    &+ \beta_6 \mathit{Age}_i^2
+    + \beta_7 \mathit{English}_i
+    + \beta_8 \mathit{Sex}_i
+    + \beta_9 \mathit{Qualification}_i \\
+    &+ \beta_{10} \mathit{Health}_i
+    + \mu_i
+    \Bigr]
+  \end{aligned}
+\end{equation}
+
+Then, we examine whether immigrants' assimilation affects their occupation choice.
+In order to do this, we classify jobs into five categories which are labor workers (the base case), blue collar workers ($\mathit{Blue}$), white collar workers ($\mathit{White}$), managers ($\mathit{Manager}$), and professionals ($\mathit{Prof}$).
+Participant $i$ chooses job $j$ when the utility of this choice ($\pmb{U}_{ij} = \pmb{X}_i \pmb{\beta}_{j} + \pmb{\varepsilon}_{ij}$) is the greatest.
+As all variables are case-specific, multinomial logit (MNL) model is preferred.
+In this model, we assume that only differences in utility ($\pmb{\varepsilon}_{ij} - \pmb{\varepsilon}_{ik}$) matter and overall scale of utility is irrelevant.
+Thus, the probability of participant $i$ selecting job $j$ from $J$ choices is expressed in equation \eqref{eq:2} and the log odds ratio between choice $i$ and the base choice is illustrated in \eqref{eq:3}.
+
+\begin{equation}
+  \label{eq:2}
+  \mathrm{P}_{ij}
+  = \mathrm{Pr}(y_i = j)
+  = \frac{
+    \exp (\pmb{X}_i \pmb{\beta}_j)
+  }{
+    1 + \sum_{l=1}^{J-1}(\pmb{X}_i \pmb{\beta}_l)
+  }
+\end{equation}
+
+\begin{equation}
+  \label{eq:3}
+  \log \biggl(
+  \frac{\mathrm{P}_{ij}
+  }{
+    \mathrm{P}_{i0}
+  }  \biggr)
+  = \pmb{X}_i \pmb{\beta}_j
+\end{equation}
+
+Considering the fact that different jobs have different properties which is likely to affect participants' choice, we add two alternative-specific variables $\mathit{Minimum\ Wage}_j$ (which is the state minimum hourly wage rate for job $j$) and $\mathrm{Average\ Wage}_j$ (which is the average state hourly wage rate for job $j$).
+In this situation, conditional logit (CL) model is better because it allows for both case-specific and alternative-specific variables.
+In addition, we clustered the standard errors by state because separate state has different levels of wage and job opportunities.
+
+One assumption of the MNL or CL model is that choices are independent of irrelevant alternatives (IIA).
+But this assumption may not hold in our research given that different jobs have separate requirements such as minimum education level and minimum working experiences.
+We use the Hausman test to check whether the IIA assumption is violated or not.
+We consider mixed logit (MXL) model to allow for the alternative specific constants (ASCs) to be normally distributed random parameters by state when the IIA assumption does not hold.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "ECON7205_Grp_Assign"
+%%% End:

@@ -1,0 +1,36 @@
+\scriptsize\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{3}{c}}
+  \caption{Probit Results and Average Marginal Effects\label{tab:probit}} \\
+  \toprule
+  &\multicolumn{1}{c}{Probit Regression}&\multicolumn{1}{c}{Robust Standard Errors}&\multicolumn{1}{c}{Average Marginal Effects}\\
+  \midrule
+  $\mathit{Immigrant}$& $-$0.733\sym{***}& $-$0.733\sym{***}& $-$0.180\sym{***}\\
+  & (0.122) & (0.123) & (0.030) \\
+  $\mathit{Year\ since\ Migration}$& 0.073\sym{***}& 0.073\sym{***}& 0.013\sym{***}\\
+  & (0.015) & (0.015) & (0.003) \\
+  $\mathit{Year\ since\ Migration}^2$& $-$0.002\sym{***}& $-$0.002\sym{***}& \\
+  & (0.000) & (0.000) & \\
+  $\mathit{Education}$& 0.146\sym{***}& 0.146\sym{***}& 0.036\sym{***}\\
+  & (0.011) & (0.011) & (0.003) \\
+  $\mathit{Age}$& 0.139\sym{***}& 0.139\sym{***}& $-$0.006\sym{***}\\
+  & (0.004) & (0.004) & (0.000) \\
+  $\mathit{Age}^2$& $-$0.002\sym{***}& $-$0.002\sym{***}& \\
+  & (0.000) & (0.000) & \\
+  $\mathit{English}$& 0.182\sym{***}& 0.182\sym{***}& 0.045\sym{***}\\
+  & (0.022) & (0.023) & (0.006) \\
+  $\mathit{Sex}$& $-$0.303\sym{***}& $-$0.303\sym{***}& $-$0.075\sym{***}\\
+  & (0.024) & (0.023) & (0.006) \\
+  $\mathit{Qualification}$& 0.344\sym{***}& 0.344\sym{***}& 0.085\sym{***}\\
+  & (0.026) & (0.026) & (0.006) \\
+  $\mathit{Health}$& 0.217\sym{***}& 0.217\sym{***}& 0.053\sym{***}\\
+  & (0.008) & (0.008) & (0.002) \\
+  $\mathit{Intercept}$& $-$5.541\sym{***}& $-$5.541\sym{***}& \\
+  & (0.179) & (0.188) & \\
+  \midrule
+  N & 17244 & 17244 & 17244 \\
+  Pseudo R-squared& 0.351 & 0.351 & \\
+  Log Likelihood& $-$7546.977 & $-$7546.977 & \\
+  \bottomrule
+  \multicolumn{4}{l}{\tiny Standard errors in parentheses}\\
+  \multicolumn{4}{l}{\tiny \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{longtable}

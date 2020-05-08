@@ -1,0 +1,166 @@
+\section{Econometric Analysis}
+\label{sec:Econometric Analysis}
+
+% Our data are randomly collected, which means that the heteroskedasticity may not exist.
+Following \citet[pp. 244--246]{wooldridge2016introductory}, we use robust or clustered standard errors for all analysis to mitigate the potential heteroskedasticity,
+
+\subsection{Employment Status and Immigrants}
+\label{sec:Employment Status and Immigrants}
+
+As discussed in the early sections, we first examine the association between employment status and immigrant assimilation pattern (measured by the number of years since arrival in Australia and its quadratic form). The results are shown in Table \ref{tab:probit}.
+
+\begin{center}
+(Refer to Table \ref{tab:probit})
+\end{center}
+
+Table \ref{tab:probit} reports the results and average marginal effects (AME) from the probit model.
+From Table \ref{tab:probit}, the $\mathit{Pseudo\ R^2}$ is 35.1\%, which means that this model fits the data well.
+In addition, the Log-Likelihood is $-7,546.977$.
+
+The coefficient of \textit{Immigrant} is negative and statistically significant, indicating that immigrants have a lower possibility of being employed relative to the locals.
+The AME of \textit{Immigrant} is $-0.180$, which means that the employment probability for immigrants is expected to be approximately 18\% lower than that for native-born individuals, ceteris paribus.
+In terms of the practical significance, this difference (18\%) in employment rate between Australian immigrants and native-born individuals is quite large considering that the average employment rate for immigrants in our sample is around 46.1\%, while the average employment rate for the locals is about 53.7\% (Table \ref{tab:desp}).
+
+Next, we examine the effect of immigrant assimilation pattern on employment status and the results are shown in Table \ref{tab:probit}.
+The coefficients of $\mathit{Year\ since\ Migration}$ and $\mathit{Year\ since\ Migration}^2$ are 0.073 and $-0.002$ respectively and both of them are statistically significant at $p=0.01$ level.
+These indicate that the relationship between immigrant assimilation patterns and employment status is positive at first and then becomes negative after a turning point and it is consistent with our predictions that the relationship between employment status and immigrant assimilation patterns is U-shaped.
+Next, we focus on the AME of $\mathit{Year\ since\ Migration}$.
+The AME of $\mathit{Year\ since\ Migration}^2$ is not reported because it is included in the AME of $\mathit{Year\ since\ Migration}$.
+The AME of $\mathit{Year\ since\ Migration}$ is 0.013 and statistically significant, which suggests that the possibility of being employed increases as an immigrant stays in Australia longer, ceteris paribus.
+In addition, 1.3\% is not a small number for employment rate, and thus the assimilation effect is also practically significant.
+
+The coefficients of all control variables are all statistically significant and the signs of them are consistent with our expectations.
+The sign of \textit{Education} is positive, which is consistent with prior literature, showing that the higher-level education that a person has attained, the higher probability that he/she is employed.
+Similar to how we measure $\mathit{Year\ since\ Migration}$, we also focus on different range of people’s age.
+However, the AME of $\mathit{Age}$ is only $-0.006$, which means the marginal effect of age on Employment is not very large, and thus the $\mathit{Age}$ effect may not be practically significant.
+In our sample, $\mathit{Age}$ ranges from 15 to over 85 and this may explain why the average age effect is negative and practically insignificant.
+The coefficients of $\mathit{English}$, $\mathit{Qualification}$ and $\mathit{Health }$ are all positively significant, which means that individuals with better English, with non-schooling qualifications or with healthier body are more likely to be employed, ceteris paribus.
+The AME of these three variables are relatively large  (0.045, 0.085, and 0.053), indicating that these effects are also practically significant in our sample.
+In terms of $\mathit{Sex}$, the coefficient is negatively significant, which means that women have a lower possibility of being employed than that of men.
+The practical significance is likely to exist because the AME is relatively large ($-0.075$).
+
+Figure \ref{fig:prob} shows the predicted employment probability between immigrants and native-born individuals by Year since Arrival for a 30-year-old healthy male with very well English level and non-schooling qualifications.
+It is clear that recently arrived immigrants have much lower predicted employment probability (0.57), relative to native people (0.86).
+However, the difference between these two groups becomes smaller, accompanied by the increased immigration time.
+
+\begin{center}
+(Refer to Figure \ref{fig:prob})
+\end{center}
+
+Overall, Table \ref{tab:desp} and Figure \ref{fig:prob} confirm that immigrants are less likely to be employed than native-born individuals and the predicted likelihood of immigrants being employed increases as the immigration time increases.
+
+\subsection{Occupation Status and Immigrants}
+\label{sec:Occupation Status and Immigrants}
+
+<<<<<<< HEAD
+Following the case of Schmidt and Strauss (1975) (shown in the Section 3 of lecture slides), we also examine the occupation status of Australian immigrants and local-born people.
+Table 3 shows the multinomial logit (MNL) results and the related AME by choosing Labour as a reference.
+The coefficients and AME on $\mathit{Immigrant}$ are generally negative for choosing other occupations, indicating that compared to Labours, immigrants are less likely to work as white collars, managers or professionals relative to native-born people.
+However, as the coefficient and AME on $\mathit{Blue}$ are statistically insignificant, meaning that immigrants and native-born individuals do not have much difference between choosing these two occupations.
+On the other hand, the coefficients and AME on $\mathit{Year\ since\ Migration}$ are generally positive (except for blue collar), which means that compared to labours, immigrants are more likely to work in other occupations with the increase in their immigration time.
+=======
+Following the case of Schmidt and Strauss (1975) (shown in the Section 3 of lecture slides), we also examine the occupation status of Australian immigrants and local-born people. 
+Table 3 shows the multinomial logit (MNL) results and the related AME by choosing "labours" as a reference. 
+The coefficients and AME on $\mathit{Immigrant}$ are generally negative for choosing other occupations, indicating that compared to labours, immigrants are less likely to work as white collars, managers or professionals relative to native-born people. 
+However, as the coefficient and AME on $\mathit{Blue}$ are statistically insignificant, meaning that immigrants and native-born individuals do not have much difference between choosing blue-collar jobs over labour-type jobs. 
+On the other hand, the coefficients and AME on $\mathit{Year\ since\ Migration}$ are generally positive (except for blue collar), which means that compared to labours, immigrants are more likely to work in other occupations with the increase in their immigration time. 
+>>>>>>> mia
+
+\begin{center}
+(Refer to Table 3)
+\end{center}
+
+<<<<<<< HEAD
+The results for other variables are generally consistent with our expectations: individuals with more education, with better English, with non-schooling qualification and with a healthier body, are more likely to choose managers or professionals, while females or individuals with more age are less likely to choose managers or professionals.
+=======
+The results for other variables are generally consistent with our expectations: individuals with higher education level, better English, non-schooling qualification and a healthier body, are more likely to choose to work in managerial or professional occupations. We also find females are less likely to work as blue collars and managers relative to males. We find people are more likely to work in managerial or professional occupations as their age gets older.
+>>>>>>> mia
+
+Table 4 reports the multinomial results regarding relative rates, (The interpretation of Table 4)....................
+
+\begin{center}
+(Refer to Table 4)
+\end{center}
+
+<<<<<<< HEAD
+Figure \ref{fig:mlogit} plots the predicted probability of working in different occupations between immigrants and native-born individuals by $\mathit{Year\ since\ Migration}$.
+From Figure 2-a, immigrants have higher predicted probabilities of choosing blue collar job when they just arrived Australia (0.013), relative to native people (0.008).
+But the difference tends to be smaller with the increased immigration time.
+Conversely, according to figure 2-d, immigrants have lower predicted probability of choosing professional jobs (0.188), relative to native people (0.258), when they just came to Australia.
+However, the difference becomes smaller.
+In terms of the Figure 2-c, the assimilation pattern also exists in the first 20 years’ migration, while the difference is a little bit larger after 20 years.
+This may also because some immigrants are likely to retire after 20 years’ migration.
+=======
+Figure \ref{fig:mlogit} plots the predicted probability of working in different occupations between immigrants and native-born individuals by $\mathit{Year\ since\ Migration}$. 
+From Figure 2-a, the predicted probability of choosing blue-collar job for immigrants is higher when they just arrived Australia (0.013), relative to native people (0.008). 
+But the difference tends to be smaller with the increased immigration time. 
+Conversely, according to figure 2-d, immigrants have lower predicted probability of choosing professional jobs (0.188), relative to native people (0.258), when they just came to Australia. 
+However, the difference becomes smaller. 
+In terms of the Figure 2-c, the assimilation pattern also exists in the first 20 years’ migration, while the difference is a little bit larger after 20 years. 
+This may also because some immigrants are likely to retire after 20 years’ migration. 
+>>>>>>> mia
+Figure 2-b does not show a clear assimilation pattern among Australian immigrants’ occupational choice of white-collar jobs.
+
+\begin{center}
+(Refer to Figure \ref{fig:mlogit})
+\end{center}
+
+To conclude, Table 3 and Figure \ref{fig:mlogit} show that immigrants are less (more) likely to choose to work as managers and professionals (blue collars), relative to native-born individuals; and the predicted possibility of choosing managers and professionals jobs increase, accompanied by the increased immigration time, while the predicted possibility of choosing blue-collar jobs decrease with the longer migration.
+
+<<<<<<< HEAD
+As discussed in early section, considering that minimise (average) wages is a potential differentiator among these the above occupations, we take a further step by including two alternative specific variables $\mathit{Minimum\ Wage}$ and $\mathit{Average\ Wage}$.
+=======
+As discussed in early section, considering that minimise (average) wages is a potential differentiator among these the above occupations, we take a further step by including two alternative-specific variables $\mathit{Minimum\ Wage}$ and $\mathit{Average\ Wage}$. 
+>>>>>>> mia
+Tables \ref{tab:clogit} and \ref{tab:mixlogit} report the results regarding conditional logit (CL) model and mix logit (MXL) model.
+
+\begin{center}
+(Refer to Table \ref{tab:clogit})
+\end{center}
+
+From Table \ref{tab:clogit}, the coefficients on $\mathit{Minimum\ Wage}$ and $\mathit{Average\ Wage}$ are not significant, indicating that wages have no significant impact on the likelihood of choosing occupation jobs, ceteris paribus.
+This insignificant result is not consistent with our expectation that the coefficients should be positively significant as individuals are more likely to choose high wage occupation jobs.
+<<<<<<< HEAD
+The reasons for the current insignificant result are that 1) some other unobservable factors may affect the results but not in the model such as the industry development or government subsidies ($\mathit{cov(u_i,y_i)\not=0}$), and these omitted variables may also affect the wages ($\mathit{cov(u_i,x_i)\not=0}$); 2) minimum wages and average wages vary on many levels such as year level or state level, and therefore, the differences between every two occupations may also vary across year or state, which increases the sampling noise.
+=======
+The reasons for the current insignificant result may be that 1) some other unobservable factors may affect the results but not in the model such as the industry development or government subsidies ($\mathit{cov(u_i,y_i)\not=0}$), and these omitted variables may also affect the wages ($\mathit{cov(u_i,x_i)\not=0}$); and 2) minimum wages and average wages vary on many levels such as year level or state level, and therefore, the differences between every two occupations may also vary across year or state, which increases the sampling noise. 
+>>>>>>> mia
+
+The four alternative specific constants (ASCs) are negative and significant, which suggests that individuals are more likely to choose labour-type jobs, relative to other occupations.
+This is consistent with our expectation because labour-type jobs require less specific ability, which is easier to attain.
+In addition, the magnitudes of the ASCs increase from column 1 to column 4 in Tables 3 and 5, indicating that the more specific skills and qualifications required for the occupation (e.g., professionals with largest magnitude), the more difficult to get that type of jobs.
+
+We also use the Hausman test and conduct the re-estimates after dropping observations with professional occupation.
+From Table \ref{tab:clogit}, $\chi^2$=8.729 and $\mathit{p}$=0.013, suggesting we may reject IIA because there may be some correlations between alternatives (e.g., people may be more likely to choose managerial and white-collar jobs instead of labour and blue-collar jobs, if professional jobs are not available).
+
+Our another alternative method is to estimate the MXL model and the results using 50 draws are shown in Table \ref{tab:mixlogit}.
+We also checked the MXL results using 100 draws, and the results are similar.
+As results would have minor change but eventually stabilise, we use 50 draws in our main text
+
+\begin{center}
+(Refer to Table \ref{tab:mixlogit})
+\end{center}
+
+Column 1 and Column 2 of Table \ref{tab:mixlogit} refer to correlated ASCs and uncorrelated ASCs, respectively. The coefficient on $\mathit{Minimum\ Wage}$ under both specifications are positive and significant, indicating that individuals are more likely to choose the occupation job with higher minimum wages regardless of the occupation types.
+Other the other hand, the coefficient on $\mathit{Average\ Wage}$ are insignificant, which means that people may not use the average wages as the criterion for choosing an occupation.
+The results confirm our expectation that people are more willing to find a higher minimum-wage job, because the minimum wage is usually more representative  than the average wage regarding the wage level of an occupation (average wages are determined by many factors such as some individuals with particularly high wages in this occupation).
+
+The results of interaction items are generally consistent with the results in Table 3 and Table \ref{tab:clogit} (row $\mathit{Immigrant}$ and row $\mathit{Year\ since\ Migration}$).
+For these three models (MNL model, CL model and MXL model) many studies usually consider that MXL model is better because this model usually provides higher Log-Likelihood and $\mathit{Pesudo\ R^2}$.
+However, in our project, CL model has the highest Log-likelihood than the other two models, this is because we do not include some control variables in MXL model as STATA cannot show convergent result under this circumstance.
+We believe that MXL model would have the highest Log-Likelihood if all variables are included.
+Furthermore, as simulation noise exists, the comparison among these models may not be accurate.
+
+\section{Conclusion}
+\label{sec:Conclusion}
+
+In this study, we attempt to investigate 1) the relations between Australian immigrants and employment/occupation status; and 2) the assimilation pattern among Australian immigrants.
+We use a sample from the latest National Health Survey 2017-18 conducted by ABS combined with the minimum wages from Australian Fairwork.
+We find that immigrants are less likely to be employed than native-born individuals, and moreover, immigrants are more likely to work in lower-skill occupations, such as labours and blue collars, relative to native-born individuals.
+However, we also find that the assimilation pattern exists if the immigration time increases, that is, the possibility of immigrants being employed increase and the possibility of choosing more skill-specific occupations (e.g., prefessionals and white collars) also increase.
+
+Two implications are drawn from our results.
+First, our findings suggest that gaps may exist in the employment rate and occupational choice between Australian immigrants and native people. Therefore, immigrants may need to improve their comprehensive abilities to find a job, especially for finding a higher-qualification job (professionals and managers). They may find such types of occupations through improving their English or gaining more certificates.
+Second, for some higher-qualification occupations such as manager, even if the gap between immigrants and native-born individuals become smaller with the increase in immigration time, but the gap is still obvious, and therefore, an immigrant who would like to get such occupations in Australia may need higher education level and more skills relative to a native person. 
+
+Limitation? We acknowledge that we did not control several variables such as experience and marriage status because of the lack of the data availability?  

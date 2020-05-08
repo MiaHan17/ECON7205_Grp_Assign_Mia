@@ -1,0 +1,127 @@
+{\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{lcc}
+  \caption{Mixed Logit Results\label{tab:mixlogit}}\\
+  \toprule
+  & \multicolumn{1}{c}{Correlated Mixed Logit}
+  & \multicolumn{1}{c}{Uncorrelated Mixed Logit} \\\hline
+  $\mathit{Minimum\ Wage}$
+  & 0.951\sym{***}
+  & 0.810\sym{***}\\
+  & (0.332)
+  & (0.259) \\
+  $\mathit{Average\ Wage}$
+  & $-$0.061
+  & $-$0.043 \\
+  & (0.054)
+  & (0.042) \\
+  $\mathit{Immigrant}\times \mathit{Blue}$
+  & $-$0.561\sym{**}
+  & $-$0.558\sym{***}\\
+  & (0.244)
+  & (0.211) \\
+  $\mathit{Immigrant}\times \mathit{White}$
+  & $-$0.587\sym{**}
+  & $-$0.501\sym{***}\\
+  & (0.275)
+  & (0.140) \\
+  $\mathit{Immigrant}\times \mathit{Manager}$
+  & $-$1.699\sym{***}
+  & $-$1.997\sym{**} \\
+  & (0.469)
+  & (0.820) \\
+  $\mathit{Immigrant}\times \mathit{Prof}$
+  & $-$0.100
+  & $-$0.237 \\
+  & (0.239)
+  & (0.148) \\
+  $\mathit{Year\ since\ Migration}\times \mathit{Blue}$
+  & 0.018
+  & 0.016\sym{*}  \\
+  & (0.011)
+  & (0.009) \\
+  $\mathit{Year\ since\ Migration}\times \mathit{White}$
+  & 0.009
+  & 0.007 \\
+  & (0.008)
+  & (0.007) \\
+  $\mathit{Year\ since\ Migration}\times \mathit{Manager}$
+  & 0.051\sym{***}
+  & 0.066\sym{**} \\
+  & (0.019)
+  & (0.030) \\
+  $\mathit{Year\ since\ Migration}\times \mathit{Prof}$
+  & 0.020\sym{**}
+  & 0.017\sym{**} \\
+  & (0.010)
+  & (0.007) \\
+  $\mathit{Blue}$
+  & $-$1.591\sym{**}
+  & $-$1.675\sym{***}\\
+  & (0.775)
+  & (0.324) \\
+  $\mathit{White}$
+  & 0.460
+  & 0.193 \\
+  & (0.619)
+  & (0.494) \\
+  $\mathit{Manager}$
+  & $-$6.093\sym{**}
+  & $-$7.712\sym{**} \\
+  & (2.402)
+  & (3.105) \\
+  $\mathit{Prof}$
+  & $-$2.378\sym{**}
+  & $-$1.834\sym{***}\\
+  & (1.017)
+  & (0.559) \\
+  $\sigma^2_{\mathit{Blue}}$
+  & $-$1.871\sym{**}
+  & $-$0.049 \\
+  & (0.955)
+  & (0.177) \\
+  $\mathrm{Corr}(\mathit{White}, \mathit{Blue})$
+  & $-$1.023 & \\
+  & (0.850) & \\
+  $\mathrm{Corr}(\mathit{Manager}, \mathit{Blue})$
+  & 0.323 & \\
+  & (1.072) & \\
+  $\mathrm{Corr}(\mathit{Prof}, \mathit{Blue})$
+  & $-$1.890\sym{**} & \\
+  & (0.848) & \\
+  $\sigma^2_{\mathit{White}}$
+  & $-$0.553
+  & 0.046 \\
+  & (1.477)
+  & (0.478) \\
+  $\mathrm{Corr}(\mathit{Manager}, \mathit{White})$
+  & $-$3.797\sym{**} & \\
+  & (1.634) & \\
+  $\mathrm{Corr}(\mathit{Prof}, \mathit{White})$
+  & 1.070 & \\
+  & (1.084) & \\
+  $\sigma^2_{\mathit{Manager}}$
+  & 0.734
+  & 5.273\sym{**} \\
+  & (0.474)
+  & (2.674) \\
+  $\mathrm{Corr}(\mathit{Prof}, \mathit{Manager})$
+  & 0.006 & \\
+  & (0.743) & \\
+  $\sigma^2_{\mathit{Prof}}$
+  & $-$0.667\sym{*}
+  & $-$0.282 \\
+  & (0.387)
+  & (0.482) \\
+  \bottomrule
+  N & 51230 & 51230 \\
+  Log Likelihood&  $-$13815.651 & $-$13821.045 \\
+  \bottomrule
+  \multicolumn{3}{l}{\tiny Standard errors clustered by state in parentheses} \\
+  \multicolumn{3}{l}{\tiny \sym{*} (p<0.1), \sym{**} (p<0.05), \sym{***} (p<0.01)}
+\end{longtable}
+}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "ECON7205_Grp_Assign"
+%%% End:

@@ -1,0 +1,44 @@
+{\scriptsize
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{4}{c}}
+  \caption{Conditional Logit Results \label{tab:clogit}} \\
+  \toprule
+  & $\mathit{Blue}$ & $\mathit{White}$
+  & $\mathit{Manager}$ & $\mathit{Prof}$ \\
+  \midrule
+  $\mathit{Minimum\ Wage}$& \multicolumn{4}{c}{0.548} \\
+  & \multicolumn{4}{c}{(0.351)} \\
+  $\mathit{Average\ Wage}$& \multicolumn{4}{c}{$-$0.048} \\
+  & \multicolumn{4}{c}{(0.047)} \\
+  $\mathit{Immigrant}$& $-$0.656 & $-$0.989\sym{***}& $-$1.229\sym{***}& $-$1.046\sym{***}\\
+  & (0.416) & (0.360) & (0.337) & (0.296) \\
+  $\mathit{Year\ since\ Migration}$& 0.048 & 0.081\sym{*}  & 0.098\sym{**} & 0.115\sym{***}\\
+  & (0.068) & (0.048) & (0.040) & (0.037) \\
+  $\mathit{Year\ since\ Migration}^2$& $-$0.001 & $-$0.002 & $-$0.002\sym{**} & $-$0.003\sym{**} \\
+  & (0.002) & (0.001) & (0.001) & (0.001) \\
+  $\mathit{Education}$& $-$0.006 & 0.321\sym{***}& 0.684\sym{***}& 1.234\sym{***}\\
+  & (0.045) & (0.015) & (0.043) & (0.065) \\
+  $\mathit{Age}$& 0.130\sym{***}& $-$0.009 & 0.117\sym{***}& 0.044\sym{***}\\
+  & (0.014) & (0.010) & (0.017) & (0.016) \\
+  $\mathit{Age}^2$& $-$0.001\sym{***}& 0.000 & $-$0.001\sym{***}& $-$0.000 \\
+  & (0.000) & (0.000) & (0.000) & (0.000) \\
+  $\mathit{English}$& 0.117\sym{**} & 0.396\sym{***}& 0.572\sym{***}& 0.626\sym{***}\\
+  & (0.049) & (0.047) & (0.086) & (0.060) \\
+  $\mathit{Sex}$& $-$1.648\sym{***}& 0.878\sym{***}& 0.185\sym{***}& 0.966\sym{***}\\
+  & (0.162) & (0.047) & (0.069) & (0.066) \\
+  $\mathit{Qualification}$& 0.044 & 0.907\sym{***}& 1.040\sym{***}& 2.460\sym{***}\\
+  & (0.067) & (0.062) & (0.077) & (0.081) \\
+  $\mathit{Health}$& 0.126\sym{***}& 0.082\sym{***}& 0.144\sym{***}& 0.138\sym{***}\\
+  & (0.035) & (0.019) & (0.026) & (0.023) \\
+  $\mathit{Intercept}$& $-$4.934\sym{***}& $-$6.050\sym{***}& $-$16.898\sym{***}& $-$22.232\sym{***}\\
+  & (1.084) & (0.676) & (1.880) & (1.196) \\
+  \midrule
+  N & \multicolumn{4}{c}{51230} \\
+  Log Likelihood& \multicolumn{4}{c}{12175.643} \\
+  Hausman Test $\chi^2$ & \multicolumn{4}{c}{8.729} \\
+  Hausman Test p-value & \multicolumn{4}{c}{0.013} \\
+  \bottomrule
+  \multicolumn{5}{l}{\tiny Standard errors clustered by state in parentheses}\\
+  \multicolumn{5}{l}{\tiny \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{longtable}
+}

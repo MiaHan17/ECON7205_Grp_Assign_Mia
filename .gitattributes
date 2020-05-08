@@ -1,0 +1,18 @@
+*.org text eol=lf
+*.sas text eol=lf
+*.py text eol=lf
+*.do text eol=lf
+*.ado text eol=lf
+*.csv text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.cls text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+*.pdf binary
+*.svg binary
+*.png binary
+*.emf binary
+*.jpg binary
+*.png binary
+*.eps binary

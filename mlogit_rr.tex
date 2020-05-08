@@ -1,0 +1,39 @@
+\scriptsize\centering\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*4c}
+  \caption{Multinominal Results Relative Rates \label{lab:mlogit_rr}} \\
+  \toprule & $\mathit{Blue}$ & $\mathit{White}$ &
+  $\mathit{Manager}$ & $\mathit{Prof}$ \\\hline
+  $\mathit{Immigrant}$
+  & 0.524 & 0.377\sym{***}& 0.301\sym{***}& 0.358\sym{**} \\
+& (0.286) & (0.140) & (0.138) & (0.144) \\
+  $\mathit{Year\ since\ Migration}$
+  & 1.050 & 1.085\sym{*}  & 1.103\sym{*}  & 1.123\sym{**} \\
+& (0.070) & (0.050) & (0.061) & (0.055) \\
+  $\mathit{Year\ since\ Migration}^2$
+  & 0.999 & 0.998 & 0.998\sym{*}  & 0.997\sym{**} \\
+& (0.002) & (0.001) & (0.001) & (0.001) \\
+  $\mathit{Education}$
+  & 0.997 & 1.383\sym{***}& 1.998\sym{***}& 3.456\sym{***}\\
+& (0.045) & (0.048) & (0.097) & (0.190) \\
+  $\mathit{Age}$
+  & 1.138\sym{***}& 0.990 & 1.123\sym{***}& 1.044\sym{**} \\
+& (0.023) & (0.013) & (0.021) & (0.018) \\
+  $\mathit{Age}^2$
+  & 0.999\sym{***}& 1.000 & 0.999\sym{***}& 1.000 \\
+& (0.000) & (0.000) & (0.000) & (0.000) \\
+  $\mathit{English}$
+  & 1.124 & 1.485\sym{***}& 1.769\sym{***}& 1.868\sym{***}\\
+& (0.099) & (0.107) & (0.179) & (0.152) \\
+  $\mathit{Sex}$
+  & 0.193\sym{***}& 2.409\sym{***}& 1.205\sym{**} & 2.629\sym{***}\\
+& (0.029) & (0.184) & (0.112) & (0.226) \\
+  $\mathit{Qualification}$
+  & 1.045 & 2.480\sym{***}& 2.834\sym{***}& 11.709\sym{***}\\
+& (0.117) & (0.204) & (0.287) & (1.351) \\
+  $\mathit{Health}$
+  & 1.135\sym{***}& 1.086\sym{***}& 1.156\sym{***}& 1.149\sym{***}\\
+& (0.051) & (0.032) & (0.043) & (0.040) \\
+  \bottomrule
+  \multicolumn{5}{l}{\tiny Robust standard errors in parentheses} \\
+  \multicolumn{5}{l}{\tiny \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)} \\
+\end{longtable}
